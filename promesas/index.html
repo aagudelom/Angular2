@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Promesas</title>
+    <!--script data-require="angular.js@1.1.5" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js" data-semver="1.1.5"></script -->
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script src="/build/js/config.js"></script>
+    <script>
+        System.import('build/js/app-promesa.module.js');
+    </script>
+  </head>
+  <body ng-app="promesaapp">
+    <div class="" ng-controller="promesaappCtrl">
+      {{cantidad}}
+    </div>
+  </body>
+</html>
