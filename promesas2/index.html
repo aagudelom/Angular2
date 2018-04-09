@@ -11,13 +11,16 @@
         System.import('build/js/app-personas.module.js');
     </script>
   </head>
-  <body ng-app="promesaapp">
+  <body ng-app="personasapp">
     <div class="container" ng-controller="personasCtrl">
       <h1>Servicios</h1>
-      <hr>
-      <pre>
-        {{personas | json}}
-      </pre>
-    </div>
+      <hr>            
+      <div ng-hide="alumnos.cargando">
+        <pre>
+          {{alumnos | json}}
+        </pre>
+      </div>
+      <label class="label label-primary" ng-show="alumnos.cargando">Cargando data...</label>
+    </div> 
   </body>
 </html>
